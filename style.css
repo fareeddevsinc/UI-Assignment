@@ -318,7 +318,7 @@ body {
   bottom: 10%;
   left: 5%;
   width: 90%;
-  height: 23%;
+  height: 25%;
   background-color: white;
   text-transform: uppercase;
 }
@@ -574,7 +574,7 @@ footer {
   color: #017cff;
   cursor: pointer;
 }
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .footer {
     display: flex;
     flex-direction: row;
@@ -582,13 +582,25 @@ footer {
   .footer__column {
     width: calc(80% - 10px);
   }
+} */
+@media (max-width: 1024px) and (min-width: 993px) {
+  .ad1 {
+    margin-top: 7%;
+  }
+  .ad2 {
+    align-items: start;
+  }
 }
 @media (max-width: 992px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .grand-parent-services {
     margin-top: 5%;
   }
   .body {
-    margin-top: 80%;
+    margin-top: 0;
   }
   .cards {
     flex-direction: column;
@@ -634,6 +646,8 @@ footer {
   }
   .accordion-header {
     width: 500px;
+    border: 1px solid black;
+    border-radius: 8px;
   }
 
   .number-container {
@@ -694,13 +708,29 @@ footer {
     margin-top: 20%;
   }
 }
-
+@media (max-width: 768px) {
+  .accordion-header {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 0;
+  }
+  .card-main {
+    margin-top: 25%;
+  }
+  .body {
+    margin-top: 0;
+  }
+  blockquote {
+    overflow: hidden;
+  }
+}
 @media (max-width: 600px) {
   blockquote {
     width: 100%;
   }
   .body {
-    margin-top: 155%;
+    margin-top: 165%;
   }
   .cards {
     flex-direction: column;
@@ -812,5 +842,179 @@ footer {
   }
   .footer__column {
     width: calc(80% - 10px);
+  }
+}
+@media (max-width: 540px) and (min-width: 426px) {
+  .body {
+    margin-top: 0;
+  }
+}
+@media (max-width: 425px) {
+  blockquote {
+    width: 100%;
+  }
+  cite {
+    display: none;
+  }
+  .body {
+    margin-top: 0;
+  }
+  .accordion {
+    font-size: 11px;
+  }
+  .accordion-header,
+  .accordion-content {
+    width: 200px;
+  }
+  .active {
+    margin-left: 0;
+  }
+  .accordion-item {
+    margin-left: 0;
+  }
+  .accordion-header {
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .accordion-header.active {
+    margin-left: 10%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    margin: 10px;
+  }
+  .navbar {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  .navbar-items {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .showcase {
+    margin: 10px;
+    margin-top: 20%;
+  }
+  .ad {
+    margin-top: 10%;
+  }
+  .ad2 {
+    flex-direction: column;
+  }
+  .ad2 img {
+    width: 100%;
+  }
+  .ad1 .hide-on-phone {
+    display: none;
+  }
+
+  .number-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .num {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .parent {
+    flex-direction: column;
+  }
+  .carousel__dots {
+    bottom: 50px;
+  }
+  .service-items {
+    flex-direction: column;
+  }
+  .service-item {
+    width: 100%;
+  }
+  .img-gallery {
+    flex-direction: column;
+  }
+  .img-gallery img {
+    max-width: 80%;
+    margin: 5px;
+  }
+  .child-blog {
+    width: 100%;
+  }
+  .carousel__dots {
+    bottom: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__column {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+  }
+  .footer__social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  .end {
+    text-align: center;
+  }
+  .card-main {
+    margin-top: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .body {
+    margin-top: 0;
+  }
+  cite {
+    display: none;
+  }
+  .accordion {
+    font-size: 11px;
+  }
+  .accordion-header,
+  .accordion-content {
+    width: 200px;
+  }
+  .active {
+    margin-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .body {
+    margin-top: 0;
+  }
+  cite {
+    display: none;
+  }
+  .accordion {
+    font-size: 11px;
+  }
+  .accordion-header,
+  .accordion-content {
+    width: 160px;
+  }
+  .active {
+    margin-left: 0;
+  }
+}
+@media (max-width: 280px) {
+  .accordion-header,
+  .accordion-content {
+    width: 152px;
   }
 }
