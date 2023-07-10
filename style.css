@@ -9,8 +9,14 @@
 body {
   font-family: "Work Sans", arial, sans-serif;
 }
-.header {
+.grand-header {
+  min-height: 850px;
   position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding-bottom: 50px;
+}
+.header {
   background-image: url("./images/header2.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -23,13 +29,13 @@ body {
 .header::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 650px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  z-index: 1;
 }
 .nav-head {
   display: flex;
@@ -80,11 +86,16 @@ body {
   color: white;
 }
 .showcase {
+  position: relative;
   margin: 120px;
   margin-left: 300px;
   margin-top: 80px;
-  z-index: 10000;
   color: white;
+  z-index: 2;
+}
+.nav-head {
+  position: relative;
+  z-index: 2;
 }
 .showcase-heading {
   font-size: 40px;
@@ -122,7 +133,7 @@ body {
   flex-wrap: wrap;
   position: absolute;
   width: 100%;
-  top: 70%;
+  bottom: 0;
   z-index: 1;
 }
 .cards {
@@ -192,7 +203,7 @@ body {
   background-color: #ffffff;
 }
 .body {
-  margin-top: 20%;
+  margin-top: 10%;
   min-height: 100vh;
   padding-bottom: 50px;
 }
@@ -603,15 +614,18 @@ footer {
     align-items: start;
   }
 }
-@media (max-width: 992px) and (min-width: 600px) {
+/* @media (max-width: 992px) and (min-width: 600px) {
   .header::before {
     background-color: transparent;
   }
-}
+} */
 
 @media (max-width: 992px) {
   * {
     overflow-x: hidden;
+  }
+  .grand-header {
+    height: 950px;
   }
   .accordion,
   .accordion-header,
@@ -693,7 +707,7 @@ footer {
     display: none;
   }
   .body {
-    margin-top: 90%;
+    margin-top: 5%;
   }
   .ad-main,
   .ad {
@@ -708,6 +722,9 @@ footer {
     font-size: 27px;
     margin-bottom: 10%;
     margin-left: 4%;
+  }
+  .text-below {
+    margin-bottom: 10%;
   }
   .accordion::before {
     content: "Why Us?";
@@ -1157,11 +1174,8 @@ footer {
   }
 }
 @media (max-width: 768px) and (max-height: 538px) and (min-width: 750px) {
-  .card-main {
-    top: 100%;
-  }
   .body {
-    margin-top: 40%;
+    margin-top: 10%;
   }
 }
 @media (max-width: 600px) {
@@ -1721,14 +1735,7 @@ footer {
     display: none;
   }
 }
-@media (max-width: 425px) and (max-height: 538px) {
-  .card-main {
-    top: 110%;
-  }
-}
 @media (max-width: 393px) {
-  .card-main {
-  }
   .body {
   }
   .number-container {
@@ -1736,15 +1743,6 @@ footer {
   }
 }
 @media (max-width: 375px) {
-  .card-main {
-    top: 85%;
-    padding: 0;
-  }
-  .number-container {
-    margin-top: 0;
-  }
-  .body {
-  }
   cite {
     display: none;
   }
@@ -1762,11 +1760,6 @@ footer {
     margin-left: 0;
   }
 }
-@media (max-width: 375px) and (max-height: 538px) {
-  .card-main {
-    top: 110%;
-  }
-}
 @media (max-width: 320px) {
   .body {
   }
@@ -1774,9 +1767,6 @@ footer {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
-  }
-  .card-main {
-    top: 100%;
   }
   .leader img {
     object-fit: none;
@@ -1810,10 +1800,6 @@ footer {
 }
 
 @media (min-width: 1280px) {
-  .card-main {
-  }
-  .body {
-  }
   .img1,
   .img4 {
     flex-basis: 20%;
@@ -1821,5 +1807,15 @@ footer {
   .img2,
   .img3 {
     flex-basis: 50%;
+  }
+}
+@media (min-height: 1076px) {
+  .body {
+    margin-top: 10%;
+  }
+}
+@media (min-height: 1076px) and (max-width: 992px) {
+  .body {
+    margin-top: 10%;
   }
 }
