@@ -120,10 +120,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
-  width: 100%;
   position: absolute;
-  top: 80%;
+  width: 100%;
+  top: 70%;
   z-index: 1;
 }
 .cards {
@@ -576,12 +575,12 @@ footer {
 }
 .img1,
 .img4 {
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
 
 .img2,
 .img3 {
-  flex-basis: 60%;
+  flex-basis: 55%;
 }
 .img-gallery img {
   width: 100%;
@@ -609,6 +608,7 @@ footer {
     background-color: transparent;
   }
 }
+
 @media (max-width: 992px) {
   * {
     overflow-x: hidden;
@@ -693,7 +693,7 @@ footer {
     display: none;
   }
   .body {
-    margin-top: 40%;
+    margin-top: 90%;
   }
   .ad-main,
   .ad {
@@ -875,10 +875,17 @@ footer {
   }
   .card-main {
     width: 100%;
-    top: 90%;
   }
   .c1 {
     display: none;
+  }
+}
+@media (max-width: 920px) {
+  .card-main {
+  }
+}
+@media (max-width: 820px) {
+  .card-main {
   }
 }
 @media (max-width: 768px) {
@@ -960,7 +967,6 @@ footer {
     display: none;
   }
   .body {
-    margin-top: 40%;
   }
   .ad-main,
   .ad {
@@ -1145,40 +1151,170 @@ footer {
   }
   .card-main {
     width: 100%;
-    top: 90%;
   }
   .c1 {
     display: none;
   }
 }
-@media (max-width: 600px) {
-  .header {
-    background-size: auto 800px;
-  }
-  .header::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  blockquote {
-    width: 100%;
-  }
+@media (max-width: 768px) and (max-height: 538px) and (min-width: 750px) {
   .card-main {
-    top: 30%;
+    top: 100%;
   }
   .body {
-    margin-top: 145%;
+    margin-top: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .accordion,
+  .accordion-header,
+  .accordion-content {
+    width: 100%;
+  }
+  #contact {
+    padding: 0;
+    padding-left: 10px;
+  }
+  .grand-parent-services {
+    width: 100%;
+  }
+  .parent-services {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .child-blog > p {
+    width: 90%;
+  }
+  .service-item p {
+    margin-top: 5%;
+  }
+  .features {
+    margin-top: 15%;
+  }
+  .parent-blog,
+  .child-blog {
+    width: 100%;
+  }
+  .text-in-img {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 30%;
+    flex-wrap: wrap;
+  }
+  .text-in-img h3 {
+    font-size: 14px;
+  }
+  .parent-leader {
+    margin-top: 30%;
+  }
+  .parent-review {
+    margin-top: 30%;
+  }
+  .grand-parent-services {
+    margin-top: 20%;
+  }
+  .parent-blog {
+    margin-top: 25%;
+  }
+  .parent-leader .parent {
+    justify-content: start;
+  }
+  .leader img {
+    object-fit: none;
+    object-position: -85px -10px;
+  }
+  .header {
+    background-size: auto 700px;
+  }
+  .nav-head {
+    background-color: #007bff;
+  }
+  .parent-review,
+  .review,
+  .carousel,
+  .carousel__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  cite {
+    display: none;
+  }
+  .body {
+  }
+  .ad-main,
+  .ad {
+    width: 100%;
+  }
+  .ad1 {
+    display: none;
+  }
+  .ad2::before {
+    content: "Our Agency";
+    color: black;
+    font-size: 27px;
+    margin-bottom: 10%;
+    margin-left: 4%;
+  }
+  .accordion::before {
+    content: "Why Us?";
+    color: black;
+    font-size: 24px;
+  }
+  .header1 {
+    margin-top: 15%;
+  }
+  .ad2 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+  }
+  .flex-item {
+    flex-basis: 50%;
+  }
+  .accordion {
+    font-size: 11px;
+    width: 100%;
+  }
+  .accordion-header,
+  .accordion-content {
+    width: 100%;
+  }
+  .active {
+    margin-left: 0;
+  }
+  .accordion-item {
+    margin-left: 0;
+  }
+  .accordion-header {
+    width: 220px;
+  }
+  .accordion-header.active {
+    margin-left: 10%;
+  }
+  .card-main {
+    width: 100%;
   }
   .cards {
     flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .card {
-    margin: 10px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .card h3 {
+    font-size: 15px;
+  }
+  .card .card-description {
+    font-size: 12px;
+    line-height: 1.8;
   }
   .navbar {
     margin: 5px;
@@ -1203,6 +1339,7 @@ footer {
   }
   .ad2 {
     flex-direction: column;
+    flex-basis: 100%;
   }
   .ad2 img {
     width: 100%;
@@ -1210,22 +1347,21 @@ footer {
   .ad1 .hide-on-phone {
     display: none;
   }
-  .accordion {
-    margin-top: 10%;
-    min-height: 200px;
-    max-height: 9999px;
-  }
-  .accordion-header {
-    width: 300px;
-  }
 
   .number-container {
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 20%;
+  }
+  .numbers {
+    margin-top: 5%;
   }
   .num {
     text-align: center;
     margin-top: 20px;
+    line-height: 1.8;
+  }
+  .num + p {
+    color: #797b7c;
   }
   .carousel__dots {
     bottom: 50px;
@@ -1236,22 +1372,40 @@ footer {
   .service-item {
     width: 100%;
   }
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img1,
+  .img2 {
+    flex-basis: 50%;
+  }
+  .img3,
+  .img4 {
+    flex-basis: 100%;
+  }
+
   .child-blog {
     width: 100%;
   }
   .carousel__dots {
     bottom: 0;
   }
+  .leader {
+    flex-basis: 45%;
+  }
   footer {
-    justify-content: start;
+    justify-content: center;
+    padding-left: 10px;
   }
   .footer {
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    margin-top: 25%;
   }
   .footer__column {
     width: calc(100% - 10px);
@@ -1259,16 +1413,20 @@ footer {
   }
   .footer__social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: row;
     text-align: center;
   }
   .end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
-  .card-main {
-    margin-top: 50%;
+  .c1 {
+    display: none;
   }
 }
 @media (min-width: 992px) {
@@ -1280,22 +1438,18 @@ footer {
     width: calc(80% - 10px);
   }
 }
-@media (max-width: 920px) {
+@media (max-width: 600px) and (min-width: 541px) {
   .card-main {
-    top: 40%;
-  }
-}
-@media (max-width: 820px) {
-  .card-main {
-    top: 50%;
+    width: 100%;
   }
 }
 @media (max-width: 540px) and (min-width: 426px) {
   .body {
-    margin-top: 80%;
   }
   .card {
     margin: 0;
+  }
+  .card-main {
   }
 }
 @media (max-width: 425px) {
@@ -1378,7 +1532,6 @@ footer {
     display: none;
   }
   .body {
-    margin-top: 70%;
   }
   .ad-main,
   .ad {
@@ -1486,7 +1639,7 @@ footer {
 
   .number-container {
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .numbers {
     margin-top: 5%;
@@ -1563,27 +1716,34 @@ footer {
   }
   .card-main {
     width: 100%;
-    top: 30%;
   }
   .c1 {
     display: none;
   }
 }
+@media (max-width: 425px) and (max-height: 538px) {
+  .card-main {
+    top: 110%;
+  }
+}
 @media (max-width: 393px) {
   .card-main {
-    top: 50%;
   }
   .body {
-    margin-top: 90%;
+  }
+  .number-container {
+    margin-top: 10%;
   }
 }
 @media (max-width: 375px) {
   .card-main {
-    top: 60%;
+    top: 85%;
     padding: 0;
   }
+  .number-container {
+    margin-top: 0;
+  }
   .body {
-    margin-top: 95%;
   }
   cite {
     display: none;
@@ -1602,9 +1762,13 @@ footer {
     margin-left: 0;
   }
 }
+@media (max-width: 375px) and (max-height: 538px) {
+  .card-main {
+    top: 110%;
+  }
+}
 @media (max-width: 320px) {
   .body {
-    margin-top: 110%;
   }
   .grand-parent-services {
     padding-left: 0;
@@ -1612,7 +1776,7 @@ footer {
     margin: 0;
   }
   .card-main {
-    top: 80%;
+    top: 100%;
   }
   .leader img {
     object-fit: none;
@@ -1645,12 +1809,10 @@ footer {
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .card-main {
-    top: 70%;
   }
   .body {
-    margin-top: 30%;
   }
   .img1,
   .img4 {
