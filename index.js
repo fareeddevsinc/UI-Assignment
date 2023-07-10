@@ -1,16 +1,21 @@
 // Get all the accordion headers
 const accordionHeaders = document.querySelectorAll(".accordion-header");
-
+const icon = document.querySelector(".accordion-header i");
 // Add click event listener to each header
 accordionHeaders.forEach((header) => {
   header.addEventListener("click", () => {
+    // Select the icon within the clicked header
+    const icon = header.querySelector("i");
     // Toggle the active class on the clicked accordion item
     header.parentNode.classList.toggle("active");
-
+    icon.classList.toggle("fa-square-plus");
+    icon.classList.toggle("fa-square-minus");
+    header.style.color = "#007bff";
     // Toggle the accordion content visibility
     const accordionContent = header.nextElementSibling;
     if (accordionContent.style.display === "block") {
       accordionContent.style.display = "none";
+      header.style.color = "black";
     } else {
       accordionContent.style.display = "block";
     }
